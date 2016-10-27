@@ -1,0 +1,121 @@
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    
+    
+}
+.header{
+    width: 100%;
+    height: 8%;
+    background: #f2f2f2;
+    transition: box-shadow 200ms cubic-bezier(0.4,0,0.2,1);
+    box-shadow: 0 1px 1px rgba(0,0,0,.22);
+}
+.main{
+    width: 60%;
+    height: 80%;
+    margin: auto;
+    margin-top: 2px;
+    background:  #f2f2f2;
+    text-transform: uppercase;
+    transition: box-shadow 200ms cubic-bezier(0.4,0,0.2,1);
+    box-shadow: 0 5px 5px rgba(0,0,0,.22);
+}
+#scoreBoard{
+    width: 100%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.scores{
+    display: inline-block;
+    margin-top: 20px;
+    border-left: 0.4em solid #14bdac;
+    width: 32%;
+    height: 50%;
+    background: #fff;
+    text-transform: uppercase;
+    transition: box-shadow 200ms cubic-bezier(0.4,0,0.2,1);
+    box-shadow: 0 2px 2px rgba(0,0,0,.18);
+    margin: auto;
+}
+.scores span{
+    margin-left: 10px;
+    font-size: 1em;
+}
+#gameBoard{
+    width: 100%;
+    height: 75%;
+    margin: auto;
+    background: #14bdac;
+    
+}
+#gameBoard div{
+    padding-top: 5%;
+    width: 60%;
+    height: 80%;
+    margin: auto;
+}
+table{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+td {
+  width: 33%;
+  height: 33%;
+  margin: 0;
+  border: 6pt solid #808080;
+  color: #fff;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+td.noTop {
+  border-top: 0pt;
+}
+td.noLeft {
+  border-left: 0pt;
+}
+td.noRight {
+  border-right: 0pt;
+}
+td.noBottom {
+  border-bottom: 0pt;
+}
+
+#restart-btn{
+    width: 100%;
+    height: 5%;
+}
+#restart-btn div{
+    width: 100%;
+    height: 100%;
+    color: #14bdac;
+    text-align: center;padding-top: 10px;
+}
+a{
+    text-decoration: none;
+}
+.x-td{
+    color:#000;
+}
+@media screen and (max-width:800px){
+    .main{
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px){
+    #gameBoard div{
+        width: 100%;
+    }
+    .scores{
+        width: 31.5%
+    }
+}
